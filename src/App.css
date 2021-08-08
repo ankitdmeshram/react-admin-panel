@@ -63,6 +63,8 @@ body {
   width: 85%;
   position: fixed;
   z-index: 1;
+  padding-right: 60px;
+
 }
 
 .gs-body .gs-content {
