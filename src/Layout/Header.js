@@ -52,7 +52,6 @@ const Header = () => {
                     className="navbar-toggler-icon"></span></button>
                 <button onClick={gs_sidebar_open} id="gs_sidebar_open"><span
                     className="navbar-toggler-icon"></span></button>
-
                 <button onClick={gs_mob_sidebar_open} id="gs_mob_sidebar_open"><span
                     className="navbar-toggler-icon"></span></button>
                 <a className="navbar-brand" href="#">Body Part</a>
@@ -63,23 +62,12 @@ const Header = () => {
                 </button>
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav ml-auto">
-                        <li className="nav-item active">
-                            <a className="nav-link" href="#">Home <span className="sr-only">(current)</span></a>
+                        <li className="nav-item">
+                            <Link to="/signin" className="nav-link"> <i class="fa fa-sign-in" aria-hidden="true"></i> Signin</Link>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#">Link</a>
-                            
+                            <Link to="/signup" className="nav-link"> <i class="fa fa-user-plus" aria-hidden="true"></i> Signup</Link>
                         </li>
-                        <li className="nav-item">
-                            <Link to="/signin"  className="nav-link"> <i class="fa fa-sign-in" aria-hidden="true"></i> Signin</Link>
-                        </li>
-                        <li className="nav-item">
-                            <Link to="/signup"  className="nav-link"> <i class="fa fa-user-plus" aria-hidden="true"></i> Signup</Link>
-                        </li>
-
-                        
-         
-                        
                     </ul>
                 </div>
             </nav>

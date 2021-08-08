@@ -19,27 +19,28 @@ import NotFound from './Pages/NotFound'
 import Signin from './Pages/Signin'
 import Signup from './Pages/Signup'
 import BlankPage from './Pages/BlankPage'
+import Buttons from './UserInterface/Buttons';
+
+//UserInterface
 
 
 const App = () => {
   return (
     <Router>
-
       <div className="container-fluid gs-cont">
         <div className="gs-container">
           <Sidebar />
           <div className="gs-body gs-col container-fluid bg-light" id="gs-body">
             <Header />
-
             <Switch>
               <Route exact path="/" component={Home} />
               <Route exact path="/signin" component={Signin} />
               <Route exact path="/signup" component={Signup} />
               <Route exact path="/blankpage" component={BlankPage} />
+              <Route exact path="/buttons" component={Buttons} />
+              
               <Route exact component={NotFound} />
             </Switch>
-
-
           </div>
         </div>
       </div>

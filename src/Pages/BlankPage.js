@@ -1,10 +1,10 @@
 import React from 'react'
 
-function BlankPage() {
+const BlankPage = () => {
     return (
-        <div className="gs-content card m-3 p-3" style={{height: "85vh"}}>
-            
-    </div>
+        <div className="gs-content card m-3 p-3" style={{ height: "85vh" }}>
+
+        </div>
     )
 }
 
