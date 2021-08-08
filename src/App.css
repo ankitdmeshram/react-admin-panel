@@ -46,7 +46,7 @@ body {
   position: relative;
 }
 
-.gs-sidebar ul li a {
+.gs-sidebar ul a {
   color: white;
   text-decoration: none;
 }
@@ -63,12 +63,13 @@ body {
   width: 85%;
   position: fixed;
   z-index: 1;
-  padding-right: 60px;
+  padding-right: 20px;
 
 }
 
 .gs-body .gs-content {
   top: 60px;
+  margin-bottom: 70px;
 }
 
 #gs_sidebar_open, #gs_sidebar_close {
@@ -78,6 +79,11 @@ body {
 #gs_mob_sidebar_close,
 #gs_mob_sidebar_open {
   display: none;
+}
+
+.gs-footer
+{
+  margin-top: 60px;
 }
 
 @media (max-width: 1000px) {

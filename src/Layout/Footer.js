@@ -1,10 +1,17 @@
 import React from 'react'
 
 const Footer = () => {
+
     return (
-        <div>
-            
-        </div>
+        <>
+            <footer className="gs-footer ">
+                <div className="card p-3 m-3">
+                <h1>Footer</h1>
+
+                </div>
+
+            </footer>
+        </>
     )
 }
 

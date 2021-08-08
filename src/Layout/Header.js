@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Header = () => {
 
@@ -7,18 +8,16 @@ const Header = () => {
         document.getElementById('gs-sidebar').style.transform = "translateX(-100%)";
         document.getElementById('gs-sidebar').style.height = "0";
         document.getElementById('gs-sidebar').style.transition = ".2s";
-    
         document.getElementById("gs-body").style.width = "100%";
         document.getElementById("gs-nav").style.width = "100%";
         document.getElementById('gs-body').style.transition = ".1s";
         document.getElementById('gs-nav').style.transition = ".1s";
         document.getElementById("gs_sidebar_close").style.display = "none";
         document.getElementById("gs_sidebar_open").style.display = "block";
-    
+
     }
     const gs_sidebar_open = () => {
-      // alert("gs_sidebar_open function called")
-    
+        // alert("gs_sidebar_open function called")
         document.getElementById('gs-sidebar').style.transform = "translateX(0%)";
         document.getElementById('gs-sidebar').style.height = "100vh";
         document.getElementById('gs-sidebar').style.transition = ".2s";
@@ -29,11 +28,9 @@ const Header = () => {
         document.getElementById("gs_sidebar_close").style.display = "block";
         document.getElementById("gs_sidebar_open").style.display = "none";
     }
-    
-    
+
     const gs_mob_sidebar_open = () => {
-      // alert(" gs_mob_sidebar_open function called")
-    
+        // alert(" gs_mob_sidebar_open function called")
         document.getElementById('gs-sidebar').style.transform = "translateX(0%)";
         document.getElementById('gs-sidebar').style.height = "100vh";
         document.getElementById('gs-sidebar').style.position = "fixed";
@@ -47,7 +44,7 @@ const Header = () => {
         document.getElementById("gs_sidebar_close").style.display = "block";
         document.getElementById("gs_mob_sidebar_open").style.display = "none";
     }
-    
+
     return (
         <>
             <nav className="navbar navbar-expand-lg navbar-light shadow-sm bg-white rounded gs-nav" id="gs-nav">
@@ -71,19 +68,18 @@ const Header = () => {
                         </li>
                         <li className="nav-item">
                             <a className="nav-link" href="#">Link</a>
+                            
                         </li>
-                        <li className="nav-item dropdown">
-                            <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Dropdown
-                            </a>
-                            <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a className="dropdown-item" href="#">Action</a>
-                                <a className="dropdown-item" href="#">Another action</a>
-                                <div className="dropdown-divider"></div>
-                                <a className="dropdown-item" href="#">Something else here</a>
-                            </div>
+                        <li className="nav-item">
+                            <Link to="/signin"  className="nav-link"> <i class="fa fa-sign-in" aria-hidden="true"></i> Signin</Link>
                         </li>
+                        <li className="nav-item">
+                            <Link to="/signup"  className="nav-link"> <i class="fa fa-user-plus" aria-hidden="true"></i> Signup</Link>
+                        </li>
+
+                        
+         
+                        
                     </ul>
                 </div>
             </nav>
