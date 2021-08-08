@@ -5,9 +5,7 @@ import Sidebar from './Layout/Sidebar';
 import Home from './Pages/Home';
 
 const App = () => {
-
   return (
-
     <div className="container-fluid gs-cont">
       <div className="gs-container">
         <Sidebar />
@@ -16,12 +14,7 @@ const App = () => {
           <Home />
         </div>
       </div>
-
-
-
     </div>
-
-
   )
 }
 
