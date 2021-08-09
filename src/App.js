@@ -20,6 +20,8 @@ import Signin from './Pages/Signin'
 import Signup from './Pages/Signup'
 import BlankPage from './Pages/BlankPage'
 import Buttons from './UserInterface/Buttons';
+import Testing from './Testing/Testing';
+import ForgetPassword from './Pages/ForgetPassword';
 
 //UserInterface
 
@@ -38,8 +40,9 @@ const App = () => {
               <Route exact path="/signup" component={Signup} />
               <Route exact path="/blankpage" component={BlankPage} />
               <Route exact path="/buttons" component={Buttons} />
-              
-              <Route exact component={NotFound} />
+              <Route exact path="/testing" component={Testing} />
+              <Route exact path="/forgetpassword" component={ForgetPassword} />
+              <Route exact component={NotFound} />  
             </Switch>
           </div>
         </div>
