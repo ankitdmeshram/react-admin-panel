@@ -36,6 +36,23 @@ body {
   padding: 5px 10px;
 }
 
+.gs-dropdown
+{
+  position: absolute;
+  background: white;
+  width: 200px;
+  padding-inline-start: 0px;
+  border: 1px solid rgba(128, 128, 128, 0.185);
+
+}
+.gs-dropdown li 
+{
+  padding: 5px;
+  list-style-type: none;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.089);
+  padding-left: 20px;
+}
+
 .gs-sidebar ul {
   padding-inline-start: 0px;
 }
@@ -85,6 +102,8 @@ body {
 {
   margin-top: 60px;
 }
+
+
 
 @media (max-width: 1000px) {
 

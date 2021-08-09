@@ -61,7 +61,25 @@ const Header = () => {
                     <span className="navbar-toggler-icon"></span>
                 </button>
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul className="navbar-nav ml-auto">
+                    <ul className="navbar-nav ml-auto" id="gs-head-nav">
+
+                        <li className="nav-item">
+                            <a data-toggle="collapse" href="#notification" className="nav-link" ><i class="fas fa-bell"></i></a>
+                            <ul className="gs-dropdown collapse" id="notification"   data-parent="#gs-head-nav">
+                                <p className="p-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores animi vero non consectetur illo laborum exercitationem nihil mollitia delectus veniam ipsam, repellendus voluptates est velit aliquam hic soluta voluptas debitis.</p>
+                            </ul>
+                        </li>   
+                        <li className="nav-item">
+                            <a data-toggle="collapse"  href="#profile" className="nav-link" ><i class="fas fa-user"></i></a>
+                            <ul className="gs-dropdown collapse" id="profile"  data-parent="#gs-head-nav">
+                                <li className="nav-item">
+                                    <Link to="/signin" className="nav-link"> <i class="fa fa-sign-in" aria-hidden="true"></i> Signin</Link>
+                                </li>
+                                <li className="nav-item">
+                                    <Link to="/signup" className="nav-link"> <i class="fa fa-user-plus" aria-hidden="true"></i> Signup</Link>
+                                </li>
+                            </ul>
+                        </li>
                         <li className="nav-item">
                             <Link to="/signin" className="nav-link"> <i class="fa fa-sign-in" aria-hidden="true"></i> Signin</Link>
                         </li>
